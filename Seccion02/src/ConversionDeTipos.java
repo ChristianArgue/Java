@@ -1,3 +1,5 @@
+import java.lang.reflect.Type;
+
 public class ConversionDeTipos {
     public static void main(String[] args) {
         String numeroStr = "50";
@@ -12,5 +14,23 @@ public class ConversionDeTipos {
         String logicoStr = "true";
         boolean logicoBoolean = Boolean.parseBoolean(logicoStr);
         System.out.println("logicoBoolean = " + logicoBoolean);
+
+        int otroNumeroInt = 100;
+        System.out.println("otroNumeroInt = " + otroNumeroInt);
+        String otroNumeroStr = Integer.toString(otroNumeroInt);
+        System.out.println("otroNumeroStr = " + otroNumeroStr);
+        
+        otroNumeroStr = String.valueOf(otroNumeroInt);
+        System.out.println("otroNumeroStr = " + otroNumeroStr);
+        
+        double otroRealDouble = 1.2345;
+        String otroRealStr = Double.toString(otroRealDouble);
+        System.out.println("otroRealStr = " + otroRealStr);
+
+        int i = 10000;
+        short s = (short)i;
+        System.out.println("s = " + s);
+        long l = i;
+        System.out.println("l = " + l);
     }
 }
